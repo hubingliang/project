@@ -32,7 +32,7 @@
         
         .timeleft {
             color: white;
-            font-size: 200px;
+            font-size: 100px;
         }
         
         .font2 {
@@ -74,7 +74,7 @@
         <span>那么你的余生只剩下：</span>
 
         <button id="start">开始</button>
-        <span id="timeLeft" class="timeleft">xx:xx:xx</span>
+        <span id="timeLeft" class="timeleft">xx天xx小时xx分钟xx秒</span>
 
     </div>
 
@@ -94,13 +94,14 @@
                 }
                 total -= 1
 
-                var hour = parseInt(total / 3600, 10)
-                var minute = parseInt((total - hour * 3600) / 60)
-                var second = total - hour * 3600 - minute * 60
+                var day = parseInt(total/86400,10)
+                var hour = parseInt((total - day*86400)/ 3600,10)
+                var minute = parseInt((total - hour * 3600 - day*86400) / 60,10)
+                var second = total - hour * 3600 - minute * 60 - day*86400
+                
 
 
-
-                timeLeft.innerText = `${hour}:${minute}:${second}`
+                timeLeft.innerText = `${day}天${hour}小时${minute}分钟${second}秒`
             }, 1000)
         })
     </script>
