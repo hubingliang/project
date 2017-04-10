@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>余生</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        
+        body {
+            height: 100%;
+        }
+        
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: rgb(255, 127, 121);
+            background: black;
+            height: 100%;
+        }
+        
+        span {
+            color: white;
+            font-size: 50px;
+        }
+        
+        .timeleft {
+            color: white;
+            font-size: 200px;
+        }
+        
+        .font2 {
+            color: rgb(255, 259, 248);
+            font-size: 20px;
+        }
+        
+        .input {
+            height: 40px;
+            width: 80px;
+            margin-top: 12px;
+            color: white;
+            font-size: 50px;
+            background: black;
+        }
+        
+        .box2 {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+        
+        button {
+            margin-top: 40px;
+            background: black;
+            color: white;
+            font-size: 25px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box2">
+            <span>如果你现在已经</span> <input id="age" class="input" type="text"><span>岁了</span>
+
+        </div>
+        <span>那么你的余生只剩下：</span>
+
+        <button id="start">开始</button>
+        <span id="timeLeft" class="timeleft">xx:xx:xx</span>
+
+    </div>
+
+
+    <script>
+        var button = document.querySelector('#start')
+        //ms
+        var age = document.querySelector('#age')
+        
+        
+        button.addEventListener('click', function () {
+            var total = (76  - age.value) *31536000
+            console.log(age.innerHTML)
+            var id = setInterval(function () {
+                if (total <= 0) {
+                    clearInterval(id)
+                }
+                total -= 1
+
+                var hour = parseInt(total / 3600, 10)
+                var minute = parseInt((total - hour * 3600) / 60)
+                var second = total - hour * 3600 - minute * 60
+
+
+
+                timeLeft.innerText = `${hour}:${minute}:${second}`
+            }, 1000)
+        })
+    </script>
+</body>
+
+</html>
