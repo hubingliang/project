@@ -214,4 +214,15 @@ body {
         left: -10px;
         top: 70px;
       }
+      .little {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: rgb(193, 91, 72);
+        z-index: 3;
+      }
     }
