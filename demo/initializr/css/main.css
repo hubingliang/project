@@ -407,18 +407,15 @@ footer{
     background: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 20px 15px;
+    flex-direction: column;
 }
 footer .qq{
     height: 15px;
-    margin-left: 5px;
     width: 15px;
+    margin-top: 5px;
 }
 footer p{
     font-weight: bold;
     font-size: 10px;
-}
-footer .fllow{
-    order: 1;
 }
