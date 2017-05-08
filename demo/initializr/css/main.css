@@ -124,6 +124,12 @@ button{
 .navigation-bar-first .navigations{
     flex: 1;
 }
+.navigation-bar-first .number{
+    color:gray;
+}
+.navigation-bar-first .article{
+    color:gray;
+}
 
 /*轮播区块二*/
 .swiper-container{
@@ -245,11 +251,15 @@ button{
 .navigation-bar-skill .number{
     margin-right: 150px;
     margin-left: 90px;
+    color: gray;
 }
+.navigation-bar-skill .article{
+    color: gray;
+}
+
 
 /*区块四*/
 .navigation-bar-music img{
-    width: calc(var(--overall-width)/3);
 }
 .swiper-slide .box1{
     color: white;
