@@ -91,21 +91,21 @@ button{
 }
 
 /*区块一*/
-.navigation-bar{
+.navigation-bar-first{
     background: rgb(236, 236, 236);
     width: 100%;
     height: 650px;
     display: flex;
     justify-content: center;
 }
-.navigation-bar>.box1{
+.navigation-bar-first .box1{
     background: rgb(236, 236, 236);
     width: 100%;
     height: 650px;
     display: flex;
     align-items: center;
 }
-.navigation-bar .box2{
+.navigation-bar-first .box2{
     display: flex;
     display: flex;
     flex-direction: column;
@@ -116,12 +116,12 @@ button{
     height: 650px;
     width: calc(var(--overall-width)/2);
 }
-.navigation-bar p{
+.navigation-bar-first p{
     font-size: 10px;
     line-height:20px;
     color:gray;
 }
-.navigation-bar .navigations{
+.navigation-bar-first .navigations{
     flex: 1;
 }
 
@@ -145,24 +145,24 @@ button{
     margin-left: 50px;
     width: calc(var(--overall-width)/3);
 }
-.swiper-container img{
+.navigation-bar-second img{
     width: calc(var(--overall-width)/3);
 }
 .swiper-slide .box1{
     color: white;
     height: 100%;
 }
-.swiper-container .navigation-bar {
+.swiper-container .navigation-bar-second{
     width: 100%;
 }
-.swiper-container .navigation-bar .box1{
+.swiper-container .navigation-bar-second .box1{
     background: rgb(88, 88, 88);
     width: 100%;
     height: 650px;
     display: flex;
     align-items: center;
 }
-.swiper-container  .box2{
+.navigation-bar-second .box2{
     display: flex;
     display: flex;
     flex-direction: column;
@@ -170,31 +170,32 @@ button{
     align-content: center;
     margin-right: 200px;
 }
-.swiper-container .logo{
+.navigation-bar-second .logo{
     background: rgb(88, 88, 88);
     margin-right: 10px;
 }
-.swiper-container .box1{
+.navigation-bar-second .box1{
     background: rgb(88, 88, 88);
-    
 }
-.swiper-container .navigation-bar{
+ .navigation-bar-second{
     width: calc(var(--overall-width)/1);
     background: rgb(88, 88, 88);
 }
-.swiper-container  .navigation{
+.navigation-bar-second  .navigation{
     color: black;
     margin-left: calc(var(--overall-width)/4)
 }
-.swiper-container .article button{
+.navigation-bar-second .article button{
     color: white;
     margin-top: 20px;
 }
-.swiper-container .article {
+.navigation-bar-second .article {
     width: calc(var(--overall-width)/5);
+    margin-right: 140px;
 }
-.swiper-container .number{
+.navigation-bar-second .number{
     margin-right: 100px;
+    margin-left: 100px;
 }
 .hoverimg{
     background:rgb(236, 236, 236);
@@ -243,10 +244,64 @@ button{
 }
 .navigation-bar-skill .number{
     margin-right: 150px;
-    margin-left: 70px;
+    margin-left: 90px;
 }
 
 /*区块四*/
+.navigation-bar-music img{
+    width: calc(var(--overall-width)/3);
+}
+.swiper-slide .box1{
+    color: white;
+    height: 100%;
+}
+.navigation-bar-music{
+    width: 100%;
+}
+.swiper-container .navigation-bar-music .box1{
+    background: rgb(88, 88, 88);
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+}
+.navigation-bar-music .box2{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-right: 200px;
+}
+.navigation-bar-music .logo{
+    background: rgb(88, 88, 88);
+    margin-right: 10px;
+}
+.navigation-bar-music .box1{
+    background: rgb(88, 88, 88);
+}
+.navigation-bar-music{
+    width: calc(var(--overall-width)/1);
+    background: rgb(88, 88, 88);
+}
+.navigation-bar-music  .navigation{
+    color: black;
+    margin-left: calc(var(--overall-width)/4)
+}
+.navigation-bar-music .article button{
+    color: white;
+    margin-top: 20px;
+}
+.navigation-bar-music .article {
+    width: calc(var(--overall-width)/5);
+    margin-right: 380px;
+    margin-left: 380px;
+
+}
+.navigation-bar-music .number{
+    margin-right: 100px;
+    margin-left: 100px;
+}
 .music{
     background: rgb(88, 88, 88);
 }
@@ -258,11 +313,12 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex: 1;
+
     text-align: center;
 }
 .music .navigations{
-    flex: 0.18;
+
+
 }
 .music p{
     width: calc(var(--overall-width)/2);
@@ -284,6 +340,58 @@ button{
 .five .number{
     color: grey;
 }
+.navigation-bar-five img{
+    width: calc(var(--overall-width)/3);
+}
+.swiper-slide .box1{
+    color: white;
+    height: 100%;
+}
+.navigation-bar-five{
+    width: 100%;
+}
+.swiper-container .navigation-bar-five .box1{
+    background: rgb(88, 88, 88);
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+}
+.navigation-bar-five.box2{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-right: 200px;
+}
+.navigation-bar-five .logo{
+    background: rgb(88, 88, 88);
+    margin-right: 10px;
+}
+.navigation-bar-five .box1{
+    background: rgb(88, 88, 88);
+}
+.navigation-bar-five{
+    width: calc(var(--overall-width)/1);
+    background: rgb(88, 88, 88);
+}
+.navigation-bar-five  .navigation{
+    color: black;
+    margin-left: calc(var(--overall-width)/4)
+}
+.navigation-bar-five .article button{
+    color: white;
+    margin-top: 20px;
+}
+.navigation-bar-five .article {
+    width: calc(var(--overall-width)/5);
+    margin-right: 40px;
+}
+.navigation-bar-five .number{
+    margin-right: 100px;
+    margin-left: 0px;
+}
 /**/
 footer{
     background: white;
@@ -300,4 +408,7 @@ footer .qq{
 footer p{
     font-weight: bold;
     font-size: 10px;
+}
+footer .fllow{
+    order: 1;
 }
