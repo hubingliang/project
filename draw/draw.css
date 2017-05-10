@@ -6,6 +6,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    
 }
 .Draw{
     background: #ddd;
@@ -28,5 +29,5 @@ button{
     min-width: 40px;
     background: white;
     border: 1px solid #ddd;
-
+    padding: 5px;
 }

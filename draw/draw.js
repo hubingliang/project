@@ -39,7 +39,7 @@ var getRandomColor = function () {
 var brush = document.querySelector('#brush')
 
 brush.addEventListener('touchstart', function (e) {
-
+    e.preventDefault()
     box.addEventListener('touchmove', function (e) {
         e.preventDefault()
         let { pageX, pageY } = e.touches[0]
