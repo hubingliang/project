@@ -8,11 +8,19 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Draw</title>
     <link rel="stylesheet" href="draw.css">
+    <script src="../jQuery/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
     <div class="Draw">
-        <button id=brush><p>毛笔</p></button><button id=load><p>换张纸</p></button><button id=color><p>彩笔</p></button>
+        <div class="tool">
+            <button id=brush><p>毛笔</p></button>
+            <button id=load><p>换张纸</p></button>
+            <button id=color><p>彩笔</p></button>
+            <button id=pen><p>铅笔</p></button>
+            <button id=erase><p>橡皮</p></button>
+        </div>
+        <div id=canvasWrapper class=canvas></div>
     </div>
 
     <script src="draw.js"></script>
