@@ -158,7 +158,7 @@ button{
     width: 25vw;
     position: absolute;
     top: 41.875vw;
-    left: 0.625vw;
+    left: 0.375vw;
 }
 .five{
     margin-bottom: 15.625vw;
@@ -166,7 +166,7 @@ button{
     height: 40.625vw;
     background: white;
     position: absolute;
-    left: 27.5vw;
+    left: 27vw;
     top: 26.25vw;
 }
 .five img{
