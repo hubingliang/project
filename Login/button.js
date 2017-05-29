@@ -5,11 +5,11 @@ signIn.onclick = function() {
 
         login.style.transform = `rotateY(${logindeg}deg)`
         if (logindeg > -90) {
-            logindeg = logindeg - 1
+            logindeg = logindeg - 2
         }
         if (logindeg <= -90) {
             sign.style.transform = `rotateY(${signdeg}deg)`
-            signdeg = signdeg - 1
+            signdeg = signdeg - 2
             if (signdeg <= 0) {
                 clearInterval(int)
             }
@@ -25,11 +25,11 @@ back.onclick = function() {
 
         sign.style.transform = `rotateY(${signdeg}deg)`
         if (signdeg < 90) {
-            signdeg = signdeg + 1
+            signdeg = signdeg + 2
         }
         if (signdeg >= 90) {
             login.style.transform = `rotateY(${logindeg}deg)`
-            logindeg = logindeg + 1
+            logindeg = logindeg + 2
             console.log(signdeg)
             if (logindeg >= 0) {
                 clearInterval(int)
