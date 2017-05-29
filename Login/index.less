@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .start(){
+        align-items: flex-start;
+    }
+}
+button:focus{
+    outline: none;
+}
+
+body{
+    background: linear-gradient(rgb(255, 244, 235), rgb(243, 255, 253));
+    height: 100vh;
+    .flex;
+    .wrapper{
+        .flex .start;
+        width: 45vh;
+        height: 75vh;
+        border-radius: 6px;
+        .login{
+            box-shadow: 0 20px 50px rgb(220, 241, 235);
+            background: white;
+            width: 45vh;
+            height: 75vh;
+            img{
+                width: 100%;
+            }
+            .content{
+                padding: 25px 25px 0 25px;
+                
+                h4{
+                    color: rgb(255, 86, 63);
+                    font-size: 20px;
+                }
+                .p{
+                    margin: 35px 0 ;
+                    font-size: 20px;
+                }
+                .button{
+                   .flex();
+                   button{
+                        color: rgb(255, 86, 63);
+                        padding: 5px;
+                        width: 15vw;
+                        list-style: none;
+                        background: white;
+                        border: 1px solid rgb(255, 86, 63);
+                   }
+                   .sign{
+                       border-radius: 6px 0 0 6px;
+                   }
+                   .register{
+                       border-radius: 0 6px 6px 0;
+                       border-left: none
+                   }
+
+               }
+            }
+
+        }
+        .signIn{
+            button{
+                color: rgb(255, 86, 63);
+                background: white;
+                border: none;
+                font-size: 20px;
+                margin: 25px 0 0 15px;
+            }
+            width: 45vh;
+            height: 75vh;
+            position: relative;
+            top: -554.4px;  
+            transform: rotateY(90deg);
+
+             form{
+                padding: 10px 25px 50px 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                input{
+                    border: none;
+                    border-bottom: 1px solid #ddd;
+                    margin: 10px 0 ;
+                    height: 30px;
+                    color: #ddd;
+                }
+                a{
+                    color: rgb(255, 86, 63);
+                    align-self: flex-end;
+                    text-decoration-line: none;
+                    font-size: 10px;
+                    font-weight: bold;
+                    margin: 5px 0 25px 0;
+                }
+                .submit{
+                    background: rgb(255, 86, 63);
+                    color: white;   
+                    border-radius: 6px;
+                    height: 45px;
+                }
+            }
+            .span{
+                color: #ddd;
+                font-size: 10px;
+                padding: 0 25px;
+                font-weight: bold; 
+                .bold{
+                    color: gray;
+                    margin-right: 80px;
+                }
+            }
+            .login
+
+        }
+
+    }
+}

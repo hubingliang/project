@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button:focus {
+  outline: none;
+}
+body {
+  background: linear-gradient(#fff4eb, #f3fffd);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .wrapper {
+  align-items: flex-start;
+  width: 45vh;
+  height: 75vh;
+  border-radius: 6px;
+}
+body .wrapper .login {
+  box-shadow: 0 20px 50px #dcf1eb;
+  background: white;
+  width: 45vh;
+  height: 75vh;
+}
+body .wrapper .login img {
+  width: 100%;
+}
+body .wrapper .login .content {
+  padding: 25px 25px 0 25px;
+}
+body .wrapper .login .content h4 {
+  color: #ff563f;
+  font-size: 20px;
+}
+body .wrapper .login .content .p {
+  margin: 35px 0 ;
+  font-size: 20px;
+}
+body .wrapper .login .content .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .wrapper .login .content .button button {
+  color: #ff563f;
+  padding: 5px;
+  width: 15vw;
+  list-style: none;
+  background: white;
+  border: 1px solid #ff563f;
+}
+body .wrapper .login .content .button .sign {
+  border-radius: 6px 0 0 6px;
+}
+body .wrapper .login .content .button .register {
+  border-radius: 0 6px 6px 0;
+  border-left: none;
+}
+body .wrapper .signIn {
+  position: relative;
+  top: -554.4px;
+  transform: rotateY(90deg);
+  box-shadow: 0 20px 50px #dcf1eb;
+  background: white;
+  width: 45vh;
+  height: 75vh;
+}
+body .wrapper .signIn button {
+  color: #ff563f;
+  background: white;
+  border: none;
+  font-size: 20px;
+  margin: 25px 0 0 15px;
+}
+body .wrapper .signIn form {
+  padding: 10px 25px 50px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body .wrapper .signIn form input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 10px 0 ;
+  height: 30px;
+  color: #ddd;
+}
+body .wrapper .signIn form a {
+  color: #ff563f;
+  align-self: flex-end;
+  text-decoration-line: none;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 5px 0 25px 0;
+}
+body .wrapper .signIn form .submit {
+  background: #ff563f;
+  color: white;
+  border-radius: 6px;
+  height: 45px;
+}
+body .wrapper .signIn .span {
+  color: #ddd;
+  font-size: 10px;
+  padding: 0 25px;
+  font-weight: bold;
+}
+body .wrapper .signIn .span .bold {
+  color: gray;
+  margin-right: 80px;
+}
+body .wrapper .signIn img {
+  width: 100%;
+}
+body .wrapper .signIn .content {
+  padding: 25px 25px 0 25px;
+}
+body .wrapper .signIn .content h4 {
+  color: #ff563f;
+  font-size: 20px;
+}
+body .wrapper .signIn .content .p {
+  margin: 35px 0 ;
+  font-size: 20px;
+}
+body .wrapper .signIn .content .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .wrapper .signIn .content .button button {
+  color: #ff563f;
+  padding: 5px;
+  width: 15vw;
+  list-style: none;
+  background: white;
+  border: 1px solid #ff563f;
+}
+body .wrapper .signIn .content .button .sign {
+  border-radius: 6px 0 0 6px;
+}
+body .wrapper .signIn .content .button .register {
+  border-radius: 0 6px 6px 0;
+  border-left: none;
+}
