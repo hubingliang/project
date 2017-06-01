@@ -163,7 +163,7 @@ body .wrapper .Register button {
   margin: 25px 0 0 15px;
 }
 body .wrapper .Register form {
-  padding: 0px 25px 50px 25px;
+  padding: 0px 25px 25px 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
