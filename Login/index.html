@@ -106,7 +106,7 @@
             user.setEmail(registerForm.email.value);
             user.signUp().then(function(loginedUser) {
                 console.log(loginedUser);
-
+                window.location.reload();
             }, function(error) {
                 console.log(error)
             });
