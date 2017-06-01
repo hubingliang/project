@@ -61,7 +61,7 @@ body .wrapper .login .content .button .register {
 }
 body .wrapper .signIn {
   position: relative;
-  top: -535.8px;
+  top: -550.2px;
   transform: rotateY(90deg);
   box-shadow: 0 20px 50px #dcf1eb;
   background: white;
@@ -149,7 +149,7 @@ body .wrapper .signIn .content .button .register {
 body .wrapper .Register {
   position: relative;
   transform: rotateY(90deg);
-  top: -1071.6px;
+  top: -1100.4px;
   box-shadow: 0 20px 50px #dcf1eb;
   background: white;
   width: 45vh;
