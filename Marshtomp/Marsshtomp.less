@@ -1,0 +1,164 @@
+.eyes{
+    height: 20px;
+    width: 15px;
+    background: rgb(175, 137, 138);
+    border: 1px solid black;
+    border-radius: 80%;
+}
+.eye{
+    height: 10px;
+    width: 6px;
+    background: rgb(90, 19, 15);
+    position: absolute;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+}
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(129, 153, 217);
+    .container {
+        position: relative;
+        margin: 200px auto  0;
+        width: 240px;
+        height: 184px;
+        .hair{
+            background: rgb(36, 54, 99);
+            width:25px;
+            height: 80px;
+            position: absolute;
+            left: 115px;
+            border-radius: 0 100% 0 0;
+            border: solid 1px #000000;
+        }
+        .face{
+            height: 100px;
+            width: 150px;
+            background: rgb(115, 179, 207);
+            border-radius: 50%;
+            position: absolute;
+            top: 70px;
+            left: 45px;
+            border: solid 1px #000000;
+            overflow: hidden;
+            box-shadow: 0 -10px 50px  #333333 inset; 
+            box-shadow: 0 20px 50px rgb(156, 226, 216) inset; 
+        }
+        .eye-left{
+            height: 20px;
+            width: 15px;
+            position: absolute;
+            top: 90px;
+            border-radius: 80px;
+            left: 75px;
+            transform: rotateY(40deg)
+        }
+        .eye-right{
+            position: absolute;
+            top: 90px;
+            border-radius: 80px;
+            left: 125px;
+        }
+        .nose1{
+            border-bottom: 1px solid black;
+            width: 6px;
+            position: absolute;
+            top: 120px;
+            left: 90px;
+            transform: rotateZ(10deg);
+
+        }
+        .nose2{
+            border-bottom: 1px solid black;
+            width: 6px;
+            position: absolute;
+            top: 120px;
+            left: 120px;
+            transform: rotateZ(-10deg);
+
+        }
+        .mouse{
+            background: rgb(157, 98, 104);
+            height: 7px;
+            width: 95px;
+            position: absolute;
+            top: 130px;
+            left: 65px;
+            border: 1px solid black;
+            border-radius: 0 0 80% 80%;
+            box-shadow: 0 0 5px  #333333 inset; 
+        }
+        .face-left{
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background: rgb(191, 143, 123);
+            position: absolute;
+            top: -10px;
+            left: -100px;
+            border: 1px solid black;
+        }
+        .face-right{
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background: rgb(191, 143, 123);
+            position: absolute;
+            top: -10px;
+            left: 115px;
+            border: 1px solid black;
+        }
+        .sai-left{
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: 50px solid rgb(191, 143, 123);
+            border-bottom: 10px solid transparent;
+            position: absolute;
+            top: 110px;
+            z-index: -1;
+        }
+        .sai-right{
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-left: 50px solid rgb(191, 143, 123);
+            border-bottom: 10px solid transparent;
+            position: absolute;
+            top: 110px;
+            left: 190px;
+        }
+    }
+    .palette{
+        position: absolute;
+        bottom: 0px;
+        width: 80vw;
+        height: 200px;
+        background: white;
+        border: 1px solid black;
+        margin-top: -200px;
+        display: flex;
+        font-size: 30px;
+        padding: 20px;
+        z-index: -1;
+        .skills{
+            width: 100%;
+            background: white;
+            padding: 10px;
+            button{
+                list-style: none;
+                width: 240px;
+                height: 40px;
+                margin: 20px 20px 20px 20px;
+                display: inline-block;
+                text-align: center;
+                background: white;
+                border: none;
+                font-size: 30px;
+            }
+        }
+    }
+}

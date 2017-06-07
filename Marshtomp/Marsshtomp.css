@@ -1,0 +1,162 @@
+.eyes {
+  height: 20px;
+  width: 15px;
+  background: #af898a;
+  border: 1px solid black;
+  border-radius: 80%;
+}
+.eye {
+  height: 10px;
+  width: 6px;
+  background: #5a130f;
+  position: absolute;
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+}
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #8199d9;
+}
+body .container {
+  position: relative;
+  margin: 200px auto  0;
+  width: 240px;
+  height: 184px;
+}
+body .container .hair {
+  background: #243663;
+  width: 25px;
+  height: 80px;
+  position: absolute;
+  left: 115px;
+  border-radius: 0 100% 0 0;
+  border: solid 1px #000000;
+}
+body .container .face {
+  height: 100px;
+  width: 150px;
+  background: #73b3cf;
+  border-radius: 50%;
+  position: absolute;
+  top: 70px;
+  left: 45px;
+  border: solid 1px #000000;
+  overflow: hidden;
+  box-shadow: 0 -10px 50px #333333 inset;
+  box-shadow: 0 20px 50px #9ce2d8 inset;
+}
+body .container .eye-left {
+  height: 20px;
+  width: 15px;
+  position: absolute;
+  top: 90px;
+  border-radius: 80px;
+  left: 75px;
+  transform: rotateY(40deg);
+}
+body .container .eye-right {
+  position: absolute;
+  top: 90px;
+  border-radius: 80px;
+  left: 125px;
+}
+body .container .nose1 {
+  border-bottom: 1px solid black;
+  width: 6px;
+  position: absolute;
+  top: 120px;
+  left: 90px;
+  transform: rotateZ(10deg);
+}
+body .container .nose2 {
+  border-bottom: 1px solid black;
+  width: 6px;
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  transform: rotateZ(-10deg);
+}
+body .container .mouse {
+  background: #9d6268;
+  height: 7px;
+  width: 95px;
+  position: absolute;
+  top: 130px;
+  left: 65px;
+  border: 1px solid black;
+  border-radius: 0 0 80% 80%;
+  box-shadow: 0 0 5px  #333333 inset;
+}
+body .container .face-left {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: #bf8f7b;
+  position: absolute;
+  top: -10px;
+  left: -100px;
+  border: 1px solid black;
+}
+body .container .face-right {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: #bf8f7b;
+  position: absolute;
+  top: -10px;
+  left: 115px;
+  border: 1px solid black;
+}
+body .container .sai-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 50px solid #bf8f7b;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 110px;
+  z-index: -1;
+}
+body .container .sai-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 50px solid #bf8f7b;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 110px;
+  left: 190px;
+}
+body .palette {
+  position: absolute;
+  bottom: 0px;
+  width: 80vw;
+  height: 200px;
+  background: white;
+  border: 1px solid black;
+  margin-top: -200px;
+  display: flex;
+  font-size: 30px;
+  padding: 20px;
+  z-index: -1;
+}
+body .palette .skills {
+  width: 100%;
+  background: white;
+  padding: 10px;
+}
+body .palette .skills button {
+  list-style: none;
+  width: 240px;
+  height: 40px;
+  margin: 20px 20px 20px 20px;
+  display: inline-block;
+  text-align: center;
+  background: white;
+  border: none;
+  font-size: 30px;
+}
