@@ -1,3 +1,54 @@
+.dialog-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(205, 205, 205, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.dialog {
+  width: 600px;
+  min-height: 100px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px 0px;
+  opacity: 100;
+}
+.dialog-title {
+  font-size: 1.3em;
+  margin: 1em;
+}
+.dialog-hr {
+  border: 1px solid #e5e5e5;
+  margin: 5px 0px;
+}
+.dialog-content {
+  margin-top: 16px;
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+.dialog-buttons {
+  margin-left: 420px;
+  margin-bottom: 5px;
+}
+.dialog-button {
+  list-style: none;
+  border-radius: 5px;
+  height: 30px;
+  min-width: 40px;
+  margin: 5px 5px 10px 5px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1px 6px;
+}
+#button1 {
+  background: #337ab7;
+  color: white;
+}
 * {
   margin: 0;
   padding: 0;
