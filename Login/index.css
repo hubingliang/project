@@ -86,7 +86,7 @@ body .wrapper .signIn form input {
   border-bottom: 0.06582411795681938vw solid #ddd;
   margin: 0.6582411795681937vw 0 ;
   height: 1.9747235387045814vw;
-  color: #ddd;
+  outline: none;
 }
 body .wrapper .signIn form a {
   color: #ff563f;
@@ -173,7 +173,7 @@ body .wrapper .Register form input {
   border-bottom: 0.06582411795681938vw solid #ddd;
   margin: 0.6582411795681937vw 0 ;
   height: 1.9747235387045814vw;
-  color: #ddd;
+  outline: none;
 }
 body .wrapper .Register form a {
   color: #ff563f;
