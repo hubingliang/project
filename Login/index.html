@@ -61,7 +61,6 @@
                 <input type="text" name="username" placeholder="User Name">
                 <input type="text" name="email" placeholder="Email Address">
                 <input type="password" name="password" placeholder="Password">
-                <a href="">Forgot your password?</a>
                 <input type="submit" value="Register" class=submit>
             </form>
             <div class="span">
@@ -73,8 +72,22 @@
     </div>
     <script src="av.js"></script>
     <script src='button.js'></script>
-    <script src="dialog.js"></script>
+
     <script>
+        function generateHtml(title) {
+            let $divwrapper = $('<div class=dialog-wrapper></div>')
+            let $div = $('<div class=dialog></div>').appendTo($divwrapper)
+            $(document.body).append($divwrapper)
+            let $title = $(`<div class=dialog-title>${title}</div>`).appendTo($div)
+            let $buttons = $('<div class=dialog-buttons></div>')
+            $buttons.appendTo($div)
+            let $button1 = $('<button class=dialog-button id=button0>Close</button>').appendTo($buttons)
+            let $button2 = $('<button class=dialog-button id=button1>Save changes</button>').appendTo($buttons)
+
+            return $divwrapper
+
+        }
+        //
         var APP_ID = '3K2XCvWpLTzzdCQIq4OCCMrs-gzGzoHsz';
         var APP_KEY = 'CC4whVEdV2ofu0qzxnimUJYP';
         AV.init({
@@ -84,7 +97,7 @@
 
         let user = AV.User.current()
         if (user) {
-            alert('你好,' + user.attributes.username)
+            //generateHtml('Welcome,' + user.attributes.username + '!')
         }
         let registerForm = document.querySelector('form[name=registerForm]')
 
@@ -122,9 +135,9 @@
             }, function(error) {
                 console.log(error)
                 if (error.code === 210) {
-                    alert('用户名密码不匹配')
+                    generateHtml('用户名密码不匹配')
                 } else if (error.code === 211) {
-                    alert('用户名不存在')
+                    generateHtml('用户名不存在')
                 }
             });
         }
