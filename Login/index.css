@@ -23,7 +23,7 @@
   margin: 1em;
 }
 .dialog-buttons {
-  margin-left: 420px;
+  margin-left: 520px;
   margin-bottom: 5px;
 }
 .dialog-button {
@@ -35,10 +35,7 @@
   background: white;
   border: 1px solid #ff563f;
   padding: 1px 6px;
-}
-#button1 {
-  background: #ff563f;
-  color: white;
+  color: #ff563f;
 }
 * {
   margin: 0;

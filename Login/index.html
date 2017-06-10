@@ -82,11 +82,12 @@
             let $buttons = $('<div class=dialog-buttons></div>')
             $buttons.appendTo($div)
             let $button1 = $('<button class=dialog-button id=button0>Close</button>').appendTo($buttons)
-            let $button2 = $('<button class=dialog-button id=button1>Save changes</button>').appendTo($buttons)
-
+            $button1.click(function() {
+                $divwrapper.remove()
+            })
             return $divwrapper
-
         }
+
         //
         var APP_ID = '3K2XCvWpLTzzdCQIq4OCCMrs-gzGzoHsz';
         var APP_KEY = 'CC4whVEdV2ofu0qzxnimUJYP';
@@ -97,7 +98,7 @@
 
         let user = AV.User.current()
         if (user) {
-            //generateHtml('Welcome,' + user.attributes.username + '!')
+            generateHtml('你好,' + user.attributes.username + '!')
         }
         let registerForm = document.querySelector('form[name=registerForm]')
 
